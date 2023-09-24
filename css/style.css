@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Fraunces', serif;
+	background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+	width: 377px;
+	background-color: hsl(0, 0%, 100%);
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.main-img {
+	background-image: url('../images/image-product-mobile.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 72%;
+}
+
+.card-body {
+	padding: 20px;
+}
+
+.card-text {
+	text-transform: uppercase;
+	margin-bottom: 13px;
+	color: hsl(228, 12%, 48%);
+	font-size: 14px;
+	font-family: 'Montserrat';
+	font-weight: 400;
+	letter-spacing: 4px;
+}
+
+h1 {
+	line-height: 0.9;
+}
+
+.cart-content {
+	margin: 20px 0;
+	font-family: 'Montserrat';
+	line-height: 1.5;
+	color: hsl(228, 12%, 48%);
+}
+
+.cart-price {
+	display: flex;
+	align-items: center;
+}
+
+.new-price {
+	margin-right: 20px;
+	font-size: 30px;
+	color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+	color: hsl(228, 12%, 48%);
+	font-size: 13px;
+	text-decoration: line-through;
+}
+
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 15px 0;
+	margin-top: 18px;
+	font-weight: 700;
+	background-color: hsl(158, 36%, 37%);
+	color: hsl(0, 0%, 100%);
+	border: none;
+	border-radius: 7px;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: hsl(158, 68%, 14%);
+}
+
+button img {
+	margin-right: 8px;
+}
+
+.attribution {
+	margin-top: 20px;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 992px) {
+	.card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 630px;
+		height: 460px;
+	}
+
+	.main-img {
+		background-image: url('../images/image-product-desktop.jpg');
+		width: 100%;
+		height: 100%;
+	}
+
+	.card-body {
+		margin: 20px 20px;
+		padding: 30px 30px;
+		width: 60%;
+		margin-left: -102px;
+	}
+}
